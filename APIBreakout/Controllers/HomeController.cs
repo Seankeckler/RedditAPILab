@@ -37,9 +37,9 @@ namespace APIBreakout.Controllers
         }
 
 
-        public ActionResult Reddit(string x)
+        public ActionResult Reddit(int name)
         {
-            int postnum = int.Parse(x);
+            int postnum = name;
             HttpWebRequest request = WebRequest.CreateHttp
                 ("https://reddit.com/r/aww/.json");
             HttpWebResponse response =(HttpWebResponse) request.GetResponse();
