@@ -1,0 +1,9 @@
+﻿@model IEnumerable<APIBreakout.Models.RedditPosts>
+
+<h2>Reddit Data from our API: </h2>
+@foreach (var o in Model)
+{
+    <h2>@o.Title</h2>
+    <img src="@o.ImageURL" alt="that's a picture from reddit" />
+    <a href="@o.LinkURL">To the link for an r/aww post</a>
+}
